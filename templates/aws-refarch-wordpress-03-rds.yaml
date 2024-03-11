@@ -46,7 +46,8 @@ Metadata:
         default: Subnets
 
 Parameters:
-
+  DBEngineVersion:
+    Default: Aurora-MySQL-3.04.0-MySQL8.0.28
   DatabaseEncrpytedBoolean:
     AllowedValues:
       - true
@@ -74,10 +75,6 @@ Parameters:
     Default: db.t3.medium
     Description: The Amazon RDS database instance class.
     Type: String
-  DBEngineVersion:
-    Description: The database engine Version
-    Type: String
-    Default: 5.7.mysql_aurora.2.11.4
   DatabaseMasterUsername:
     AllowedPattern: ^([a-zA-Z0-9]*)$
     Description: The Amazon RDS master username.
@@ -97,6 +94,7 @@ Parameters:
     AllowedPattern: ^([a-zA-Z0-9]*)$
     Description: The Amazon RDS master database name.
     Type: String
+  
   DatabaseSecurityGroup:
     Description: Select the database security group.
     Type: AWS::EC2::SecurityGroup::Id
