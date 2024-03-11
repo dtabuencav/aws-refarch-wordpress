@@ -46,8 +46,8 @@ Metadata:
         default: Subnets
 
 Parameters:
-  DBEngineVersion:
-    Default: Aurora-MySQL-3.04.0-MySQL8.0.28
+    Engine: MySQL
+    EngineVersion: 5.7.44
   DatabaseEncrpytedBoolean:
     AllowedValues:
       - true
