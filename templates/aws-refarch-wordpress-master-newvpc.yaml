@@ -958,7 +958,7 @@ Resources:
           !GetAtt [ newvpc, Outputs.DataSubnet ]
         NumberOfSubnets:
           !Ref NumberOfAZs
-      TemplateURL: https://s3.amazonaws.com/aws-refarch/wordpress/latest/templates/aws-refarch-wordpress-03-rds.yaml
+      TemplateURL: https://github.com/dtabuencav/aws-refarch-wordpress/blob/master/templates/aws-refarch-wordpress-03-rds.yaml
   route53:
     Condition: CreateRecordSet
     DependsOn: [ publicalb, web ]
